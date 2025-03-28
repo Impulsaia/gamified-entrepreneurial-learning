@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,24 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// Custom colors for our app
+				brand: {
+					50: '#f0f4ff',
+					100: '#dbe4ff',
+					200: '#bac8ff',
+					300: '#91a7ff',
+					400: '#748ffc',
+					500: '#5c6cf9',
+					600: '#444bef',
+					700: '#3730d6',
+					800: '#312aad',
+					900: '#2c2689',
+				},
+				success: {
+					50: '#ecfdf5',
+					500: '#10b981',
+					600: '#059669',
 				}
 			},
 			borderRadius: {
@@ -84,11 +103,16 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'float': {
+					'0%, 100%': { transform: 'translateY(0)' },
+					'50%': { transform: 'translateY(-10px)' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'float': 'float 5s ease-in-out infinite'
 			}
 		}
 	},
